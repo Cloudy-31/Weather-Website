@@ -1,0 +1,71 @@
+body {
+    color: #333333;
+    /*to set the color*/
+    font-family: arial;
+    /*writing style*/
+    max-width: 650px;
+    /*here instead of letting all the text go to another line when we reach the end of the line in the browser it will suppose that after 650px is the end of the line so we get some empty space for example on the right or left side*/
+    margin: 0 auto;
+    /*0 space from the top and the button but right and left auto spacing so it will be in the center(evening the space from the right and left) but the center of the 650 px or whatver value we have in the margin*/
+    padding: 0 16px;
+    /*This will make 0 space from the top and the botton but 16px from right and left so when you shrinking the size of the browser window it won't from the right and left get absolutely close to the left or the right so there will be 16px space*/
+    /*as well as the space will shown when the browser window edges are close enough like 0 and 16px*/
+
+    /*margin is making space outside the box*/
+    /*padding is making space inside the box*/
+
+    display: flex;
+    /*to enable flexbox*/
+    flex-direction: column;
+    /*to make it top to botton*/
+    min-height: 100vh
+        /*vh is viewpoint height we set it to 100 which means it is 100% taking the space from the browser (the viewpoint is the box showing in the browser which has the content*/
+}
+
+.main-content {
+    flex-grow: 1;
+    /*this tels flex box to take the main-content should take the whole left(remaining) space*/
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header a {
+    /*here we are targeting the a tabs in the header*/
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+    /*here we are removing the underline*/
+}
+
+.portrait {
+    /*here we created a class and which we can use its features and design inside other tages by providing it as anything else: class="portrait"*/
+    width: 250px;
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+}
